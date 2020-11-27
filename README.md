@@ -25,6 +25,3 @@ __How to use__
         android:textColor="@color/white"
         app:cornerRadius="10dp" />
 
-    Set android:background : Applied press effect
-    Set app:cornerRadius : Set corner radius
-

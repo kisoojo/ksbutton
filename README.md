@@ -17,7 +17,7 @@ __Step 2.__ Add the dependency
 
 __How to use__
 
-    <com.zenoation.ksbutton.KSButton
+    <com.zenoation.library.KSButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#00f"

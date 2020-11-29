@@ -6,7 +6,7 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <com.zenoation.ksbutton.KSButton
+    <com.zenoation.library.KSButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/black"
@@ -15,7 +15,7 @@
         android:textColor="@color/white"
         app:cornerRadius="10dp" />
 
-    <com.zenoation.ksbutton.KSButton
+    <com.zenoation.library.KSButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#f00"
@@ -24,7 +24,7 @@
         android:textColor="@color/white"
         app:cornerRadius="20dp" />
 
-    <com.zenoation.ksbutton.KSButton
+    <com.zenoation.library.KSButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#00f"

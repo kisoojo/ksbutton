@@ -31,13 +31,17 @@ public class KSButton extends AppCompatButton {
 
     public KSButton(Context context, AttributeSet attrs) {
         super(context, attrs);
-        mIsRound = context.obtainStyledAttributes(attrs, R.styleable.KButtonRoundAttr).getBoolean(R.styleable.KButtonRoundAttr_isRound, false);
-        mCornerRadius = context.obtainStyledAttributes(attrs, R.styleable.KButtonCornerAttr).getDimension(R.styleable.KButtonCornerAttr_cornerRadius, 0.0f);
-        setBgColor();
+        onCreate(context, attrs);
     }
 
     public KSButton(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        onCreate(context, attrs);
+    }
+
+    private void onCreate(Context context, AttributeSet attrs) {
+        mIsRound = context.obtainStyledAttributes(attrs, R.styleable.KSButtonAttr).getBoolean(R.styleable.KSButtonAttr_isRound, false);
+        mCornerRadius = context.obtainStyledAttributes(attrs, R.styleable.KSButtonAttr).getDimension(R.styleable.KSButtonAttr_cornerRadius, 0.0f);
         setBgColor();
     }
 

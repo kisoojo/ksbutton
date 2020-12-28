@@ -9,28 +9,56 @@
     <com.zenoation.library.KSButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:background="@color/black"
         android:text="버튼"
-        android:layout_marginTop="10dp"
         android:textColor="@color/white"
         app:cornerRadius="10dp" />
 
     <com.zenoation.library.KSButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:background="#f00"
         android:text="버튼"
-        android:layout_marginTop="10dp"
         android:textColor="@color/white"
         app:cornerRadius="20dp" />
 
     <com.zenoation.library.KSButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:background="#00f"
         android:text="버튼"
-        android:layout_marginTop="10dp"
         android:textColor="@color/white"
         app:cornerRadius="30dp" />
+
+    <com.zenoation.library.KSCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="체크박스"
+        app:drawableChecked="@drawable/checkbox_gray"
+        app:drawableColor="@color/colorPrimary"
+        app:drawableUnchecked="@drawable/checkbox_gray" />
+
+    <com.zenoation.library.KSTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/checkbox_gray"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="텍스트뷰"
+        app:drawableHeight="30dp"
+        app:drawableWidth="30dp" />
+
+    <com.zenoation.library.KSEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/checkbox_gray"
+        android:drawablePadding="5dp"
+        android:text="에디트텍스트"
+        app:drawableHeight="30dp"
+        app:drawableWidth="30dp" />
 
 </LinearLayout>

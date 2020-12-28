@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="KButtonRoundAttr">
+    <declare-styleable name="KSButtonAttr">
         <attr name="isRound" format="boolean" />
-    </declare-styleable>
-
-    <declare-styleable name="KButtonCornerAttr">
         <attr name="cornerRadius" format="dimension" />
     </declare-styleable>
+
+    <declare-styleable name="KSTextViewAttr">
+        <attr name="drawableWidth" format="dimension" />
+        <attr name="drawableHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="KSCheckBoxAttr">
+        <attr name="drawableChecked" format="reference" />
+        <attr name="drawableUnchecked" format="reference" />
+        <attr name="drawableColor" format="reference" />
+    </declare-styleable>
+
 </resources>

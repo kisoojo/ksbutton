@@ -1,18 +1,22 @@
 package com.zenoation.library;
 
 import android.content.Context;
+import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.util.AttributeSet;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatTextView;
+import androidx.core.content.ContextCompat;
 
 /**
  * Created by kisoojo on 2020.12.24
  */
 public class KSTextView extends AppCompatTextView {
     private float mWidth, mHeight;
+    private int mColor;
 
     public KSTextView(@NonNull Context context) {
         super(context);
@@ -33,6 +37,7 @@ public class KSTextView extends AppCompatTextView {
     private void onCreate(Context context, AttributeSet attrs) {
         mWidth = context.obtainStyledAttributes(attrs, R.styleable.KSTextViewAttr).getDimension(R.styleable.KSTextViewAttr_drawableWidth, 0);
         mHeight = context.obtainStyledAttributes(attrs, R.styleable.KSTextViewAttr).getDimension(R.styleable.KSTextViewAttr_drawableHeight, 0);
+        mColor = context.obtainStyledAttributes(attrs, R.styleable.KSCheckBoxAttr).getResourceId(R.styleable.KSCheckBoxAttr_drawableColor, 0);
     }
 
     @Override
@@ -54,6 +59,14 @@ public class KSTextView extends AppCompatTextView {
             if (d == null) {
                 continue;
             }
+            if (mColor != 0) {
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    d.setTint(ContextCompat.getColor(getContext(), mColor));
+                } else {
+                    d.setColorFilter(ContextCompat.getColor(getContext(), mColor), PorterDuff.Mode.SRC_ATOP);
+                }
+            }
+
             float r;
             if (mWidth == 0) {
                 r = (float) d.getIntrinsicWidth() / d.getIntrinsicHeight();

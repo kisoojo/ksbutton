@@ -1,7 +1,9 @@
 package com.zenoation.library;
 
 import android.content.Context;
+import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.util.AttributeSet;
 
 import androidx.annotation.NonNull;
@@ -87,10 +89,18 @@ public class KSCheckBox extends AppCompatCheckBox {
             if (mColor == 0) {
                 mColor = R.color.colorPrimary;
             }
-            d.setTint(ContextCompat.getColor(getContext(), mColor));
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                d.setTint(ContextCompat.getColor(getContext(), mColor));
+            } else {
+                d.setColorFilter(ContextCompat.getColor(getContext(), mColor), PorterDuff.Mode.SRC_ATOP);
+            }
             mDrawableChecked = d;
         } else {
-            d.setTintList(null);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                d.setTintList(null);
+            } else {
+                d.setColorFilter(null);
+            }
             mDrawableUnchecked = d;
         }
     }

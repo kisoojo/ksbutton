@@ -1,18 +1,23 @@
 package com.zenoation.library;
 
+import android.bluetooth.BluetoothClass;
 import android.content.Context;
+import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.util.AttributeSet;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatEditText;
+import androidx.core.content.ContextCompat;
 
 /**
  * Created by kisoojo on 2020.12.24
  */
 public class KSEditText extends AppCompatEditText {
     private float mWidth, mHeight;
+    private int mColor;
 
     public KSEditText(@NonNull Context context) {
         super(context);
@@ -33,6 +38,7 @@ public class KSEditText extends AppCompatEditText {
     private void onCreate(Context context, AttributeSet attrs) {
         mWidth = context.obtainStyledAttributes(attrs, R.styleable.KSTextViewAttr).getDimension(R.styleable.KSTextViewAttr_drawableWidth, 0);
         mHeight = context.obtainStyledAttributes(attrs, R.styleable.KSTextViewAttr).getDimension(R.styleable.KSTextViewAttr_drawableHeight, 0);
+        mColor = context.obtainStyledAttributes(attrs, R.styleable.KSCheckBoxAttr).getResourceId(R.styleable.KSCheckBoxAttr_drawableColor, 0);
     }
 
     @Override
@@ -54,6 +60,14 @@ public class KSEditText extends AppCompatEditText {
             if (d == null) {
                 continue;
             }
+            if (mColor != 0) {
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    d.setTint(ContextCompat.getColor(getContext(), mColor));
+                } else {
+                    d.setColorFilter(ContextCompat.getColor(getContext(), mColor), PorterDuff.Mode.SRC_ATOP);
+                }
+            }
+
             float r;
             if (mWidth == 0) {
                 r = (float) d.getIntrinsicWidth() / d.getIntrinsicHeight();

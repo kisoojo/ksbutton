@@ -33,17 +33,10 @@
         android:textColor="@color/white"
         app:cornerRadius="30dp" />
 
-    <com.zenoation.library.KSCheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="체크박스"
-        app:drawableChecked="@drawable/checkbox_gray"
-        app:drawableColor="@color/colorPrimary"
-        app:drawableUnchecked="@drawable/checkbox_gray" />
-
     <com.zenoation.library.KSTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:drawableLeft="@drawable/checkbox_gray"
         android:drawablePadding="5dp"
         android:gravity="center"
@@ -54,6 +47,7 @@
     <com.zenoation.library.KSEditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:background="@color/white"
         android:drawableLeft="@drawable/checkbox_gray"
         android:drawablePadding="5dp"
@@ -61,4 +55,36 @@
         app:drawableHeight="30dp"
         app:drawableWidth="30dp" />
 
+    <com.zenoation.library.KSCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="체크박스"
+        app:drawableChecked="@drawable/checkbox_gray"
+        app:drawableColor="@color/colorPrimary"
+        app:drawableUnchecked="@drawable/checkbox_gray" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <com.zenoation.library.KSRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="라디오버튼1"
+            app:drawableChecked="@drawable/circle_check_gray"
+            app:drawableColor="@color/colorPrimary"
+            app:drawableUnchecked="@drawable/circle_check_gray" />
+
+        <com.zenoation.library.KSRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="라디오버튼2"
+            app:drawableChecked="@drawable/circle_check_gray"
+            app:drawableColor="@color/colorPrimary"
+            app:drawableUnchecked="@drawable/circle_check_gray" />
+    </RadioGroup>
 </LinearLayout>

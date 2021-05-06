@@ -68,3 +68,12 @@ __How to use__
     - drawableUnchecked : drawable while unchecked
     - drawableColor : drawable tint color
     
+        
+    
+    <com.zenoation.library.KSCalendar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    - setOnClickPrevListener() : Prev arrow click listener
+    - setOnClickNextListener() : Next arrow click listener
+    - setOnClickDayListener() : Day click listener

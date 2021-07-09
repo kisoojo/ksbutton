@@ -1,4 +1,3 @@
-include ':library'
 include ':KSButton'
 include ':app'
 rootProject.name = "ksbutton_sample"

@@ -87,8 +87,4 @@
             app:drawableColor="@color/colorPrimary"
             app:drawableUnchecked="@drawable/circle_check_gray" />
     </RadioGroup>
-
-    <com.zenoation.library.KSCalendar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
 </LinearLayout>

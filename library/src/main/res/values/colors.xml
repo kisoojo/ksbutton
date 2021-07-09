@@ -5,23 +5,4 @@
     <color name="trans_75">#bf000000</color>
     <color name="trans_50">#a0000000</color>
     <color name="transparent_dark_grey">#A0000000</color>
-
-    <color name="black">#000</color>
-    <color name="white">#FFF</color>
-
-    <color name="rsrv_full_bg">#cfd8dc</color>
-    <color name="rsrv_text">#626262</color>
-    <color name="rsrv_today">#90caf9</color>
-    <color name="rsrv_morning">#448aff</color>
-    <color name="rsrv_afternoon">#ffab40</color>
-    <color name="rsrv_day">#4caf50</color>
-
-    <color name="red">#ea4335</color>
-    <color name="reddark">#ba2b2b</color>
-    <color name="yellow">#fbc423</color>
-    <color name="yellowdark">#db9700</color>
-    <color name="blue">#4285f4</color>
-    <color name="bluedark">#3162c7</color>
-    <color name="green">#34a853</color>
-    <color name="greendark">#22741c</color>
 </resources>

@@ -19,8 +19,6 @@ allprojects {
         google()
         jcenter()
     }
-
-    group='com.github.kisoojo'
 }
 
 task clean(type: Delete) {

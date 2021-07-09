@@ -1,4 +1,4 @@
-package com.zenoation.library;
+package com.zenoation.ksbutton;
 
 import android.content.Context;
 import android.graphics.PorterDuff;
@@ -8,36 +8,36 @@ import android.util.AttributeSet;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.AppCompatCheckBox;
+import androidx.appcompat.widget.AppCompatRadioButton;
 import androidx.core.content.ContextCompat;
 
 /**
- * Created by kisoojo on 2020.12.23
+ * Created by kisoojo on 2020.12.30
  */
-public class KSCheckBox extends AppCompatCheckBox {
+public class KSRadioButton extends AppCompatRadioButton {
     private int mDrawableCheckedId, mDrawableUncheckedId;
     private float mWidth, mHeight;
     private int mColor;
 
     private Drawable mDrawableChecked, mDrawableUnchecked;
 
-    public KSCheckBox(@NonNull Context context) {
+    public KSRadioButton(@NonNull Context context) {
         super(context);
     }
 
-    public KSCheckBox(@NonNull Context context, @Nullable AttributeSet attrs) {
+    public KSRadioButton(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         onCreate(context, attrs);
     }
 
-    public KSCheckBox(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public KSRadioButton(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         onCreate(context, attrs);
     }
 
     private void onCreate(Context context, AttributeSet attrs) {
-        mDrawableCheckedId = context.obtainStyledAttributes(attrs, R.styleable.KSCheckBoxAttr).getResourceId(R.styleable.KSCheckBoxAttr_drawableChecked, R.drawable.checkbox_gray);
-        mDrawableUncheckedId = context.obtainStyledAttributes(attrs, R.styleable.KSCheckBoxAttr).getResourceId(R.styleable.KSCheckBoxAttr_drawableUnchecked, R.drawable.checkbox_gray);
+        mDrawableCheckedId = context.obtainStyledAttributes(attrs, R.styleable.KSCheckBoxAttr).getResourceId(R.styleable.KSCheckBoxAttr_drawableChecked, R.drawable.circle_check_gray);
+        mDrawableUncheckedId = context.obtainStyledAttributes(attrs, R.styleable.KSCheckBoxAttr).getResourceId(R.styleable.KSCheckBoxAttr_drawableUnchecked, R.drawable.circle_check_gray);
         mWidth = context.obtainStyledAttributes(attrs, R.styleable.KSTextViewAttr).getDimension(R.styleable.KSTextViewAttr_drawableWidth, 0);
         mHeight = context.obtainStyledAttributes(attrs, R.styleable.KSTextViewAttr).getDimension(R.styleable.KSTextViewAttr_drawableHeight, 0);
         mColor = context.obtainStyledAttributes(attrs, R.styleable.KSCheckBoxAttr).getResourceId(R.styleable.KSCheckBoxAttr_drawableColor, 0);

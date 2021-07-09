@@ -1,6 +1,5 @@
-package com.zenoation.library;
+package com.zenoation.ksbutton;
 
-import android.bluetooth.BluetoothClass;
 import android.content.Context;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;

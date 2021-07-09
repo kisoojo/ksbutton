@@ -6,7 +6,7 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <com.zenoation.library.KSButton
+    <com.zenoation.ksbutton.KSButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -15,7 +15,7 @@
         android:textColor="@color/white"
         app:cornerRadius="10dp" />
 
-    <com.zenoation.library.KSButton
+    <com.zenoation.ksbutton.KSButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -24,7 +24,7 @@
         android:textColor="@color/white"
         app:cornerRadius="20dp" />
 
-    <com.zenoation.library.KSButton
+    <com.zenoation.ksbutton.KSButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -33,7 +33,7 @@
         android:textColor="@color/white"
         app:cornerRadius="30dp" />
 
-    <com.zenoation.library.KSTextView
+    <com.zenoation.ksbutton.KSTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -44,7 +44,7 @@
         app:drawableHeight="30dp"
         app:drawableWidth="30dp" />
 
-    <com.zenoation.library.KSEditText
+    <com.zenoation.ksbutton.KSEditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -55,7 +55,7 @@
         app:drawableHeight="30dp"
         app:drawableWidth="30dp" />
 
-    <com.zenoation.library.KSCheckBox
+    <com.zenoation.ksbutton.KSCheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -70,7 +70,7 @@
         android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
-        <com.zenoation.library.KSRadioButton
+        <com.zenoation.ksbutton.KSRadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="라디오버튼1"
@@ -78,7 +78,7 @@
             app:drawableColor="@color/colorPrimary"
             app:drawableUnchecked="@drawable/circle_check_gray" />
 
-        <com.zenoation.library.KSRadioButton
+        <com.zenoation.ksbutton.KSRadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"

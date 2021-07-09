@@ -1,10 +1,7 @@
-package com.zenoation.library;
+package com.zenoation.ksbutton;
 
-import android.app.Activity;
 import android.content.Context;
-import android.graphics.Rect;
 import android.util.DisplayMetrics;
-import android.view.Window;
 import android.widget.Toast;
 
 

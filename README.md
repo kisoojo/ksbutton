@@ -11,7 +11,7 @@ __Step 1.__ Add the JitPack repository to your build file
 __Step 2.__ Add the dependency    
     
     dependencies {
-            implementation 'com.github.kisoojo:ksbutton:2.0'
+            implementation 'com.github.kisoojo:ksbutton:2.2'
     }
 
 
@@ -60,6 +60,8 @@ __How to use__
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Check box"
+        app:drawableHeight="30dp"
+        app:drawableWidth="30dp"
         app:drawableChecked="@drawable/checkbox_gray"
         app:drawableColor="@color/colorPrimary"
         app:drawableUnchecked="@drawable/checkbox_gray" />

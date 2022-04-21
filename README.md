@@ -11,7 +11,7 @@ __Step 1.__ Add the JitPack repository to your build file
 __Step 2.__ Add the dependency    
     
     dependencies {
-            implementation 'com.github.kisoojo:ksbutton:1.1'
+            implementation 'com.github.kisoojo:ksbutton:1.1.0'
     }
 
 

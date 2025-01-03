@@ -11,13 +11,13 @@ __Step 1.__ Add the JitPack repository to your build file
 __Step 2.__ Add the dependency    
     
     dependencies {
-            implementation 'com.github.kisoojo:ksbutton:1.1.0'
+            implementation 'com.github.kisoojo:ksbutton:1.2.0'
     }
 
 
 __How to use__
 
-    <com.zenoation.library.KSButton
+    <com.zenoation.KSButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#00f"
@@ -31,7 +31,7 @@ __How to use__
     
     
 
-    <com.zenoation.library.KSTextView
+    <com.zenoation.KSTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/checkbox_gray"
@@ -41,7 +41,7 @@ __How to use__
         app:drawableHeight="30dp"
         app:drawableWidth="30dp" />
 
-    <com.zenoation.library.KSEditText
+    <com.zenoation.KSEditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/white"
@@ -56,7 +56,7 @@ __How to use__
     
     
    
-    <com.zenoation.library.KSCheckBox
+    <com.zenoation.KSCheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Check box"

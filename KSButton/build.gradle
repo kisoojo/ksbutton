@@ -59,5 +59,6 @@ afterEvaluate {
 }
 
 tasks.register('publishCustomReleasePublicationToMavenLocal') {
-    dependsOn bundleReleaseAar
+    dependsOn tasks.named("bundleReleaseAar")
+    dependsOn tasks.named("publishReleasePublicationToMavenLocal")
 }

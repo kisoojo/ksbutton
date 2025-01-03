@@ -56,9 +56,8 @@ afterEvaluate {
             }
         }
     }
-}
 
-tasks.register('publishCustomReleasePublicationToMavenLocal') {
-    dependsOn tasks.named("bundleReleaseAar")
-    dependsOn tasks.named("publishReleasePublicationToMavenLocal")
+    tasks.named("publishReleasePublicationToMavenLocal") {
+        dependsOn tasks.named("bundleReleaseAar")
+    }
 }
